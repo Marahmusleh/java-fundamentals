@@ -1,6 +1,6 @@
 import java.time.LocalDateTime;
 
-
+import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
@@ -16,7 +16,9 @@ public class Main {
         System.out.println("I own " + turtleCount + " " + pluralize("turtle", turtleCount) + ".");
         flipNHead(2);
         clock();
-
+//        int[] arr ={1,2,3,4};
+//        arr =reverseArray(arr);
+//        System.out.println(Arrays.toString(arr));
     }
 
     public static String pluralize(String word, int number) {
@@ -63,4 +65,13 @@ public class Main {
             }
         }
     }
+//    public static int[] reverseArray(int[] arr){
+//        int[] reversedArr = new int[arr.length];
+//
+//        for(int i =0;i<arr.length ; i++ ){
+//            reversedArr[i] = arr[ arr.length-1 - i ];
+//        }
+//        return reversedArr;
+//    }
+
 }
