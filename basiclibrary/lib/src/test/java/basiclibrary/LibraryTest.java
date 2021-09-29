@@ -13,9 +13,13 @@ import static basiclibrary.Library.getWeather;
 import static basiclibrary.Library.tally;
 import static org.junit.jupiter.api.Assertions.*;
 
-import static org.junit.jupiter.api.Assertions.*;
 
 class LibraryTest {
+
+//    Library testing = new Library();
+    @Test void someLibraryMethodReturnsTrue() {
+        Library classUnderTest = new Library();
+        assertTrue(classUnderTest.someLibraryMethod(), "someLibraryMethod should return 'true'"
 
     @Test void testLowHighTemp() {
             int[][] weeklyMonthTemperatures = {
@@ -45,5 +49,27 @@ class LibraryTest {
                         expectedWinner,
                         tally(votes)
                 );
+
+    }
+      lab2
+    @Test
+    public void testRoll(){
+        int num = 4;
+        assertEquals(num, Library.roll(num).length);
+    }
+    @Test
+    public void containsDuplicates() {
+        assertTrue(Library.containsDuplicates(new int[] { 1, 3, 4, 4 }));
+    }
+
+    @Test
+    public void average() {
+        assertEquals(3, Library.getAverage(new int[] { 1 ,2 ,3 ,4 ,5}));
+    }
+
+    @Test
+    public void lowestAverage() {
+        assertArrayEquals(new int[] { 1, 2, 3, 4 },
+                Library.lowestAverage(new int[][] { { 1, 2, 3, 4 }, { 1, 3, 5, 7 } }));
     }
 }
