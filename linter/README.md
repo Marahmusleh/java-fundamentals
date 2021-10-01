@@ -4,6 +4,7 @@
 
 Test these 5 js files in 5 different cases using JUnit as below:
 
+
 Test the linter on a file that contains no errors.
 Test the linter on a file that contains one error.
 Test the linter on a file that contains few errors.
