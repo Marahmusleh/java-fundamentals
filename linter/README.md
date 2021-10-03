@@ -1,3 +1,5 @@
+
+
 ## Linter Application for javascript files:
 This application reads a javascript file and reads it all, and if the file contains an error, it will print "Missing semicolon." with the line number instead of the line content.
 

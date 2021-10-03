@@ -56,6 +56,9 @@ public class Library {
 
         String winner = tally(votes);
         System.out.println(winner + " received the most votes!");
+
+        int[][] arr = { {1, 2, 3}, {3, 5, 7}, {1, 7, 10} };
+        System.out.println(sumOfMatrix(arr));
     }
 
     public static int[] roll(int n) {
@@ -68,6 +71,8 @@ public class Library {
         return arr;
 
     }
+
+
 
     public static boolean containsDuplicates(int[] num) {
         for (int i = 0; i < num.length; i++) {
