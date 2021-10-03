@@ -1,14 +1,13 @@
-### Write a method that reads a JavaScript file with a given Path, and generates an error message whenever it finds a line that doesn’t end in a semi-colon.
 
-* Testing
 
-Test these 5 js files in 5 different cases using JUnit as below:
+## Linter Application for javascript files:
+This application reads a javascript file and reads it all, and if the file contains an error, it will print "Missing semicolon." with the line number instead of the line content.
 
-Test the linter on a file that contains no errors.
-Test the linter on a file that contains one error.
-Test the linter on a file that contains few errors.
-Test the linter on a file that contains many errors.
-Test the linter on an empty file.
+This is what is considered an error in this application if a line doesn't end with a ';', unless:
 
-**Error Message sample**
-"Line 3: Missing semicolon."
+Won’t show an error if the line is empty.
+Won’t show an error if the line ends with an opening curly brace '{'.
+Won’t show an error if the line ends with a closing curly brace '}'.
+Won’t show an error if the line contains if or else.
+
+*When this app runs, it will print out the content of the javascript file, but replaces the lines containing an error with the line number and "Missing semicolon.".
