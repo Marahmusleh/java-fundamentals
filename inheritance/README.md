@@ -52,6 +52,7 @@ add the name of the movie that we want to have it in the list.
 remove the name of the movie that we want to delete it from the list.
 
 The testing file has the following testing methods:
+
 1. ReviewToString: tests if the review class' toString method is returning correctly.
 2. Tests: tests all the methods of addMovie and removeMovie
 5. testAddReviewMethod: tests if the adding reviews into a restaurant instance is working and returns the right String value.
