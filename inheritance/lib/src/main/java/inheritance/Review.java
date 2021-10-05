@@ -32,7 +32,13 @@ public class Review {
     }
 
     public void setNumOStars(int numOStars) {
-        this.numOStars = numOStars;
+        if(numOStars >= 5){
+            this.numOStars = 5;
+        }else if(numOStars <= 0) {
+            this.numOStars = 0;
+        }else{
+            this.numOStars = numOStars;
+        }
     }
 
     @Override
