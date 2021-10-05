@@ -17,12 +17,12 @@ public class Restaurant {
     }
 
 
-    public String getName() {
+    public String getShopName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setShopName(String shopName) {
+        this.name = shopName;
     }
 
     public double getNumOfStars() {
